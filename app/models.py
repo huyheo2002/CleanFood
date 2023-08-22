@@ -7,7 +7,7 @@ class Users(models.Model):
     username = models.OneToOneField(User, on_delete=models.SET_NULL, null=True, blank=True)
     name = models.CharField(max_length=200, null=True)
     email = models.CharField(max_length=200, null=True)
-    avatar = models.ImageField(upload_to='upload/%Y/%m')
+    avatar = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -19,7 +19,7 @@ class Products(models.Model):
     name = models.CharField(max_length=200, null=False)
     desc = models.TextField(null=True, blank=True)
     price = models.FloatField(null=False)
-    thumbnail = models.TextField()
+    thumbnail = models.ImageField(null=True, blank=True)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
     active = models.BooleanField(default=True)
