@@ -46,15 +46,18 @@
     position: relative;
 }
 
-.header__logo{
-    width: 240px;
-    height: 20px;
-    margin: 20px 0;
+.header__logo{    
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.header__logo img{
-    width: 100%;
+.header__logo a {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+    text-decoration: none;
 }
 
 .header__nav{
@@ -68,8 +71,12 @@
     height: 100%;
 }
 
+
+
 .list__nav li{
     padding: 0 15px;
+    display: flex;
+    /* align-items: center; */
     /* transition: 1s ease; */
 }
 
@@ -186,6 +193,9 @@ ul.dropdown-menu li:hover a.dropdown-item{
     border-bottom: #333 3px solid;
     color: #333;
     transition: all 0.5s ease;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 600;
 }
 
 .subnav__items p{
@@ -261,6 +271,12 @@ ul.dropdown-menu li:hover a.dropdown-item{
     display: flex;
     margin-bottom: 30px;
     color: #fff;
+}
+
+.hotline__phone p, .hotline__contact p{
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
 }
 
 .hotline__phone i , .hotline__contact i{
@@ -395,6 +411,7 @@ ul.dropdown-menu li:hover a.dropdown-item{
 .social__like p , .social__share p{
     font-size: 12px;
     font-weight: bolder;
+    margin-bottom: 0;
 }
 
 .social__like i , .social__share i{
@@ -606,3 +623,5 @@ ul.dropdown-menu li:hover a.dropdown-item{
 .show{
     display: block !important;
 }
+
+/* page */

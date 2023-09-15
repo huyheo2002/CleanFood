@@ -8,6 +8,24 @@ def getHomepage(request):
     context = {"products": products}
     return render(request, "app/home.html", context)
 
+def getNewspage(request):    
+    return render(request, "app/news.html")
+
+def getIntroduceFoodpage(request):    
+    return render(request, "app/introduceFood.html")
+
+def getMenupage(request):    
+    return render(request, "app/menu.html")
+
+def getStorepage(request):    
+    return render(request, "app/store.html")
+
+def getCartpage(request):    
+    return render(request, "app/cart.html")
+
+def getProductDetailpage(request):    
+    return render(request, "app/productDetail.html")
+
 def index(request):
     return HttpResponse("this is pages test")
 

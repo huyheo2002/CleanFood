@@ -1,0 +1,33 @@
+{% extends 'app/base.html' %} {% load static %}
+{% block head-content %}
+<title>Chi tiết sản phẩm</title>
+<link rel="stylesheet" href="{% static 'css/productDetail.css' %}" />
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" href="{% static 'responsive/base.css' %}" />
+
+{% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}" /> {% endcomment %}
+{% endblock head-content %}
+{% block main-content %}   
+    {% comment %} <div style="height: 100vh; background-color: red;">hello</div> {% endcomment %}
+    <div class="body__product" style="margin: 80px auto;">
+        <h1 class="product__title">Chi tiết sản phẩm</h1>
+        <div class="product__container">
+            <div class="product__imgWrap">
+                <img src="{%static "images/logo.png"%}" alt="">
+            </div>
+            <div class="product__content">
+                <div class="product__info">
+                    <h3 class="product__name">hello</h3>
+                    <p class="product__value">120.000 đ</p>
+                    <p class="product__desc">hello dumeeeeeeeeeeeeeeeeeeeeeeeee</p>
+                </div>
+                <div class="product__action">
+                    <div class="product__btnCancel">
+                        <a href="">Cancel</a>
+                    </div>
+                    <div class="product__btnAddToCart" id="btnAddToCart">Add to Cart</div>                                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock main-content %}

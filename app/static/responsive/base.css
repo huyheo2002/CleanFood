@@ -1,0 +1,304 @@
+/* responsive */
+/* pc */
+@media screen and (min-width: 1025px) {
+    .header__menu-mobile{
+        display: none;
+    }
+
+    .header__nav-close-mobile{
+        display: none;
+    }
+
+    .headerNav{
+        display: block !important;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) and (min-width: 740px) {
+    /* header */
+    .header{
+        margin: 0;
+        padding: 0 10%;
+        width: 100%;
+    }
+    .header__menu-mobile{
+        line-height: 60px;
+    }
+
+    .header__nav{
+        background-color: #fff;
+        height: fit-content;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        display: none;
+    }
+
+    .list__nav{
+        display: block;
+    }
+
+    .list__nav li{
+        border-bottom: 2px solid #ccc;
+        height: 50px;
+        line-height: 50px;
+    }
+    /* btn close in navbar */
+    .header__nav-close-mobile {
+        height: 35px;
+        line-height: 35px;
+        padding-left: 15px;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .header__nav-close-mobile i{
+        color: red;
+        font-size: 25px;
+    }
+
+    .list__nav .subnav{
+        display: none;
+    }
+
+    .list__nav li:hover .subnav{
+        display: none;
+    }
+
+    /* modal login :v */
+    .modal__header{
+        height: fit-content;
+    }
+
+    .modal__header__title{
+        font-size: 16px;
+        line-height: 45px;
+    }
+
+    .modal__close i{
+        font-size: 22px;
+    }
+
+    .modal__label, .modal__login {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .modal__login {
+        font-size: 16px;
+    }
+
+    .modal__footer-head{
+        font-size: 14px;
+    }
+
+    .modal__footer-subhead{
+        font-size: 12px;
+    }
+
+    .modal__footer-icon{
+        height: 35px;
+        padding: 0;
+    }
+
+    .modal__input-user, .modal__input-pass {
+        margin-bottom: 12px;
+    }
+
+    /* khi chưa nhập tài khoản mật khẩu -> sinh code */
+    .text-danger {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    li.nav-item.dropdown.d-flex {
+        margin: 0 15px;
+    }
+
+    ul.dropdown-menu{
+        right: 140px;
+        top: -100px;
+        height: fit-content;
+    }
+    /* end sinh code */
+
+    .header__menu-mobile i{
+        font-size: 20px;
+        padding: 0 5px;
+    }
+
+    /* footer */
+    .footer__socials {
+        display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 739px) {
+    /* header */
+    .header{
+        margin: 0;
+        padding: 0 10%;
+        width: 100%;
+    }
+    .header__menu-mobile{
+        line-height: 60px;
+    }
+
+    .header__nav{
+        background-color: #fff;
+        height: fit-content;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        display: none;
+    }
+
+    .list__nav{
+        display: block;
+    }
+
+    .list__nav li{
+        border-bottom: 2px solid #ccc;
+        height: 50px;
+        line-height: 50px;
+    }
+    /* btn close in navbar */
+    .header__nav-close-mobile {
+        height: 35px;
+        line-height: 35px;
+        padding-left: 15px;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .header__nav-close-mobile i{
+        color: red;
+        font-size: 25px;
+    }
+
+    .list__nav .subnav{
+        display: none;
+    }
+
+    .list__nav li:hover .subnav{
+        display: none;
+    }
+
+    /* modal login :v */
+    .modal__header{
+        height: fit-content;
+    }
+
+    .modal__header__title{
+        font-size: 16px;
+        line-height: 45px;
+    }
+
+    .modal__close i{
+        font-size: 22px;
+    }
+
+    .modal__label, .modal__login {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .modal__login {
+        font-size: 16px;
+    }
+
+    .modal__footer-head{
+        font-size: 14px;
+    }
+
+    .modal__footer-subhead{
+        font-size: 12px;
+    }
+
+    .modal__footer-icon{
+        height: 35px;
+        padding: 0;
+    }
+
+    .modal__input-user, .modal__input-pass {
+        margin-bottom: 12px;
+    }
+
+    /* khi chưa nhập tài khoản mật khẩu -> sinh code */
+    .text-danger {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    li.nav-item.dropdown.d-flex {
+        margin: 0 15px;
+    }
+
+    ul.dropdown-menu{
+        right: 140px;
+        top: -100px;
+        height: fit-content;
+    }
+    /* end sinh code */
+
+    .header__menu-mobile i{
+        font-size: 20px;
+        padding: 0 5px;
+    }
+
+    /* footer */
+    .footer {
+        width: 90%;
+        height: fit-content;
+        margin: 0 5%;
+        padding: 5% 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .social_bg{
+        height: 120px;
+        width: 100%;
+    }
+
+    .footer__socials{
+        height: 180px;
+    }
+
+    .footer__introduce, .footer__rules, .footer__hotline{
+        height: fit-content;
+        margin-bottom: 15px;
+    }
+
+    .social__icon{
+        bottom: 15px;
+    }
+
+    .hotline__phone, .hotline__contact {
+        display: flex;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    .rules__title, .introduce__title{
+        margin: 0;
+    }
+
+    .rules__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .introduce__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .introduce__list li{
+        width: 32%;
+        text-align: center;
+    }
+}

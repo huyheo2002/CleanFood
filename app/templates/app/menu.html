@@ -1,0 +1,494 @@
+{% extends 'app/base.html' %} {% load static %} 
+{% block head-content%} 
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="{%static 'css/menu.css' %}" />
+    <link rel="stylesheet" href="{%static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{%static 'responsive/base.css' %}" />       
+    {% comment %} <link rel="stylesheet" href="{%static 'css/style.css' %}" /> {% endcomment %}
+{% endblock head-content %}
+{% block main-content %}
+    <!-- container-menu -->
+    <div class="menu__Container">
+        <div class="menu__Sidebar">
+            <ul class="menu__listItems">
+                <li class="menu__itemsBlock"><a href="#" class="menu__items menu__items-link" id="menu__item-1">
+                    <div class="menu__dotCoffee visible" id="dotCoffee-1">
+                        <img src="{%static "images/logo.png"%}" alt="">
+                    </div>
+                    <p class="menu__text glow">Tất Cả</p>
+                </a></li>
+                <li class="menu__itemsBlock"><a href="#" class="menu__items menu__items-link" id="menu__item-2">
+                    <div class="menu__dotCoffee" id="dotCoffee-2">
+                        <img src="{%static "images/logo.png"%}" alt="">
+                    </div>
+                    <p class="menu__text">Cà Phê</p>
+                    <ul class="menu__subnav">
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Cà Phê Việt Nam</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Cà Phê Máy</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Cold Brew</a></li>
+                    </ul>
+                </a></li>
+                <li class="menu__itemsBlock"><a href="#" class="menu__items menu__items-link" id="menu__item-3">
+                    <div class="menu__dotCoffee" id="dotCoffee-3">
+                        <img src="{%static "images/logo.png"%}" alt="">
+                    </div>
+                    <p class="menu__text">Trà</p>
+                    <ul class="menu__subnav">
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Trà Trái Cây</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Trà Sữa Macchiato</a></li>
+                    </ul>
+                </a></li>
+                <li class="menu__itemsBlock"><a href="#" class="menu__items menu__items-link" id="menu__item-4">
+                        <div class="menu__dotCoffee" id="dotCoffee-4">
+                            <img src="{%static "images/logo.png"%}g" alt="">
+                        </div>
+                        <p class="menu__text">Món Khác</p>
+                        <ul class="menu__subnav">
+                            <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Đá Xay</a></li>
+                            <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Matcha - Socola</a></li>
+                        </ul>
+                    </a></li>
+                <li class="menu__itemsBlock"><a href="#" class="menu__items menu__items-link" id="menu__item-5">
+                    <div class="menu__dotCoffee" id="dotCoffee-5">
+                        <img src="{%static "images/logo.png"%}" alt="">
+                    </div>
+                    <p class="menu__text">Bánh</p>
+                    <ul class="menu__subnav">
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Bánh Mặn</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Bánh Ngọt</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Snack</a></li>
+                    </ul>
+                </a></li>
+                <li class="menu__itemsBlock"><a href="#" class="menu__items menu__items-link" id="menu__item-6">
+                    <div class="menu__dotCoffee" id="dotCoffee-6">
+                        <img src="{%static "images/logo.png"%}" alt="">
+                    </div>
+                    <p class="menu__text">Tại Nhà</p>
+                    <ul class="menu__subnav">
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Cà Phê Tại Nhà</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Trà Tại Nhà</a></li>
+                    </ul>
+                </a></li>
+            </ul>
+        </div>
+        <div class="menu__content">
+            <div class="menuContent__wrap">
+                <div class="menu__promote">
+                    <img src="{%static "images/logo.png"%}" alt="">
+                </div>
+                <!-- coffee VN -->
+                <!-- menu items-hot -->
+                <div class="itemsHot__wrap">
+                    <!-- cà phê việt nam -->
+                    <h3 class="title__itemTea">Cà Phê Việt Nam</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- cà phê máy -->
+                    <h3 class="title__itemTea">Cà Phê Máy</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Cold brew -->
+                    <h3 class="title__itemTea">Cold Brew</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Trà trái cây -->
+                    <h3 class="title__itemTea">Trà Trái Cây</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Trà sữa Macchiato -->
+                    <h3 class="title__itemTea">Trà Sữa Macchiato</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Đá xay -->
+                    <h3 class="title__itemTea">Đá Xay</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- matcha - socola -->
+                    <h3 class="title__itemTea">Matcha - Socola</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Bánh mặn -->
+                    <h3 class="title__itemTea">Bánh Mặn</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Bánh ngọt -->
+                    <h3 class="title__itemTea">Bánh Ngọt</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- snack -->
+                    <h3 class="title__itemTea">Snack</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Cà phê tại nhà -->
+                    <h3 class="title__itemTea">Cà Phê Tại Nhà</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>                        
+                    </ul>
+                    <!-- Trà tại nhà -->
+                    <h3 class="title__itemTea">Trà Tại Nhà</h3>
+                    <ul class="itemsHot__list">
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap">
+                                    <img src="{%static "images/logo.png"%}" alt="">
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        hello
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        500.000
+                                    </p>
+                                </div>
+                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>        
+        // tránh lan truyền sự kiện (truyền vào event con)
+        function isCheckPropagation(e) {
+            e.stopPropagation();
+        }
+    </script>
+    <script src="{%static 'js/menu.js'%}"></script> 
+{% endblock main-content %}

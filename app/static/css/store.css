@@ -46,15 +46,18 @@
     position: relative;
 }
 
-.header__logo{
-    width: 240px;
-    height: 20px;
-    margin: 20px 0;
+.header__logo{    
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.header__logo img{
-    width: 100%;
+.header__logo a {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+    text-decoration: none;
 }
 
 .header__nav{
@@ -68,8 +71,12 @@
     height: 100%;
 }
 
+
+
 .list__nav li{
     padding: 0 15px;
+    display: flex;
+    /* align-items: center; */
     /* transition: 1s ease; */
 }
 
@@ -186,6 +193,9 @@ ul.dropdown-menu li:hover a.dropdown-item{
     border-bottom: #333 3px solid;
     color: #333;
     transition: all 0.5s ease;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 600;
 }
 
 .subnav__items p{
@@ -261,6 +271,12 @@ ul.dropdown-menu li:hover a.dropdown-item{
     display: flex;
     margin-bottom: 30px;
     color: #fff;
+}
+
+.hotline__phone p, .hotline__contact p{
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
 }
 
 .hotline__phone i , .hotline__contact i{
@@ -395,6 +411,7 @@ ul.dropdown-menu li:hover a.dropdown-item{
 .social__like p , .social__share p{
     font-size: 12px;
     font-weight: bolder;
+    margin-bottom: 0;
 }
 
 .social__like i , .social__share i{
@@ -606,3 +623,76 @@ ul.dropdown-menu li:hover a.dropdown-item{
 .show{
     display: block !important;
 }
+
+/* page */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+.snip1579 {
+  font-family: 'Lato', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.snip1579 * {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.snip1579 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.snip1579 figcaption {
+  position: absolute;
+  height: 75px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.snip1579 h3 {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 3px 0;
+}
+.snip1579 h5 {
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: #bbb;
+  letter-spacing: 1px;
+}
+.snip1579 blockquote {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 1em;
+}
+.snip1579 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.snip1579:hover figcaption,
+.snip1579.hover figcaption {
+  height: calc(85%);
+}
+

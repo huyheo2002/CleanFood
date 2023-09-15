@@ -1,94 +1,357 @@
-{% extends 'app/base.html' %} {% load static %} {% block poster-slider%}
-<div id="carouselExampleIndicators" class="carousel slide slider_wrapper" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li
-      data-target="#carouselExampleIndicators"
-      data-slide-to="0"
-      class="active"
-    ></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner slider_custom">
-    <div class="carousel-item active">
-      <img src={% static "images/poster1.png" %} class="d-block w-100" alt="..." />
-    </div>
-    <div class="carousel-item">
-      <img src={% static "images/poster2.png" %} class="d-block w-100" alt="..." />
-    </div>
-    <div class="carousel-item">
-      <img src={% static "images/poster3.png" %} class="d-block w-100" alt="..." />
-    </div>
-  </div>
-  <a
-    class="carousel-control-prev"
-    href="#carouselExampleIndicators"
-    role="button"
-    data-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a
-    class="carousel-control-next"
-    href="#carouselExampleIndicators"
-    role="button"
-    data-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-{% endblock poster-slider %} 
-
+{% extends 'app/base.html' %} {% load static %} 
+{% block head-content%} 
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="{%static 'css/home.css' %}" />
+    <link rel="stylesheet" href="{%static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{%static 'responsive/base.css' %}" />       
+    {% comment %} <link rel="stylesheet" href="{%static 'css/style.css' %}" /> {% endcomment %}
+{% endblock head-content %}
 {% block main-content %}
-<div class="container">  
-  {% comment %} row {% endcomment %}
-  <div class="row">
-    {% comment %} card {% endcomment %}
-    {% for product in products %}
-    <section class="col-3 my-5">
-      <div class="card">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src={{product.thumbnail.url}} class="img-fluid" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-          </a>
+    {% comment %} <div id="main">         {% endcomment %}
+        <!-- poster -->
+        <div class="poster">
+            <img src={% static "images/logo.png" %} alt="">
         </div>
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold"><a>{{product.name}}</a></h5>
-          {% comment %} <ul class="list-unstyled list-inline mb-0">
-            <li class="list-inline-item me-0">
-              <i class="fas fa-star text-warning fa-xs"> </i>
-            </li>
-            <li class="list-inline-item me-0">
-              <i class="fas fa-star text-warning fa-xs"></i>
-            </li>
-            <li class="list-inline-item me-0">
-              <i class="fas fa-star text-warning fa-xs"></i>
-            </li>
-            <li class="list-inline-item me-0">
-              <i class="fas fa-star text-warning fa-xs"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fas fa-star-half-alt text-warning fa-xs"></i>
-            </li>
-            <li class="list-inline-item">
-              <p class="text-muted">4.5 (413)</p>
-            </li>
-          </ul> {% endcomment %}
-          <p class="mb-2">$ • {{product.price}}VND</p>
-          <p class="card-text">
-            {{product.desc}}
-          </p>
-          <hr class="my-4"/>          
-          <a href="#!" class="btn btn-primary">Add to card</a>
-          <a href="#!" class="btn btn-primary">Info</a>          
+        <!-- menu items-hot -->
+        <div class="itemsHot__wrap">
+            <ul class="itemsHot__list">                
+                <li><a href="" >
+                        <div class="itemHot__imgWrap">
+                            <img src={% static "images/logo.png" %} alt="">
+                        </div>
+                        <div class="itemHot__content">
+                            <h3 class="itemHot__title">
+                                Trà Dưa Đào Sung Túc
+                            </h3>
+                            <p class="itemHot__value">
+                                59.000 đ
+                            </p>
+                        </div>
+                    </a></li>
+                <li><a href="" >
+                        <div class="itemHot__imgWrap">
+                            <img src={% static "images/logo.png" %} alt="">
+                        </div>
+                        <div class="itemHot__content">
+                            <h3 class="itemHot__title">
+                                Trà Sen Nhãn Sum Vầy
+                            </h3>
+                            <p class="itemHot__value">
+                                59.000 đ
+                            </p>
+                        </div>
+                    </a></li>
+                <li><a href="">
+                        <div class="itemHot__imgWrap">
+                            <img src={% static "images/logo.png" %} alt="">
+                        </div>
+                        <div class="itemHot__content">
+                            <h3 class="itemHot__title">
+                                Trà sữa Masala Chai Trân Châu Đá
+                            </h3>
+                            <p class="itemHot__value">
+                                59.000 đ
+                            </p>
+                        </div>
+                    </a></li>
+                <li><a href="" >
+                        <div class="itemHot__imgWrap">
+                            <img src={% static "images/logo.png" %} alt="">
+                        </div>
+                        <div class="itemHot__content">
+                            <h3 class="itemHot__title">
+                                Latte Táo Lê Quế Đá
+                            </h3>
+                            <p class="itemHot__value">
+                                59.000 đ
+                            </p>
+                        </div>
+                    </a></li>
+                <li><a href="">
+                        <div class="itemHot__imgWrap">
+                            <img src="{% static "images/logo.png" %}" alt="">
+                        </div>
+                        <div class="itemHot__content">
+                            <h3 class="itemHot__title">
+                                Chà Bông Phô Mai
+                            </h3>
+                            <p class="itemHot__value">
+                                32.000 đ
+                            </p>
+                        </div>
+                    </a></li>
+                <li><a href="">
+                        <div class="itemHot__imgWrap">
+                            <img src={% static "images/logo.png" %} alt="">
+                        </div>
+                        <div class="itemHot__content">
+                            <h3 class="itemHot__title">
+                                Croissant Trứng Muối
+                            </h3>
+                            <p class="itemHot__value">
+                                35.000 đ
+                            </p>
+                        </div>
+                    </a></li>
+                <li><a href="">
+                        <div class="itemHot__imgWrap">
+                            <img src={% static "images/logo.png" %} alt="">
+                        </div>
+                        <div class="itemHot__content">
+                            <h3 class="itemHot__title">
+                                Bánh Mì Que Pate
+                            </h3>
+                            <p class="itemHot__value">
+                                12.000 đ
+                            </p>
+                        </div>
+                    </a></li>
+                <li><a href="">
+                        <div class="itemHot__imgWrap">
+                            <img src={% static "images/logo.png" %} alt="">
+                        </div>
+                        <div class="itemHot__content">
+                            <h3 class="itemHot__title">
+                                Bánh Mì VN Thịt Nguội
+                            </h3>
+                            <p class="itemHot__value">
+                                29.000 đ
+                            </p>
+                        </div>
+                    </a></li>
+            </ul>
         </div>
-      </div>      
-    </section>    
-    {% endfor %}
-  </div>
-</div>
-<h1>welcome to my website</h1>
+        <!-- item-focus -->
+        <div class="itemsFocus__wrap">
+            <div class="itemsFocus">
+                <div class="itemFirst">
+                    <div class="itemFirst__desc">
+                        <h3 class="itemFirst__desc-title">
+                            Trà Sen Nhãn Sum Vầy
+                        </h3>
+                        <p class="itemFirst__desc-content">
+                            Thức uống mang hương vị của nhãn, của sen, của trà Oolong đầy thanh mát cho tất cả các thành viên trong dịp Tết này.
+                            An lành, thư thái và đậm đà chính là những gì The Coffee House mong muốn gửi trao đến bạn và gia đình.
+                        </p>
+                        <!-- 1 -->
+                        <div class="itemsFirst__desc-btn">
+                            Tìm hiểu thêm
+                        </div>
+                    </div>
+                    <div class="itemFirst__img">
+                        <img src={% static "images/logo.png" %} alt="">
+                    </div>
+                </div>
+                <div class="itemSecond">
+                    <div class="itemSecond__desc">
+                        <h3 class="itemSecond__desc-title">
+                            Trà Dưa Đào Sung Túc
+                        </h3>
+                        <p class="itemSecond__desc-content">
+                            Vị thơm ngọt của Dưa lưới và đào tươi chua chua, ngọt ngọt trên nền trà Oolong trứ danh cùng lớp foam cheese mỏng nhẹ vị mặn mặn tạo nên sự cân bằng cho thức uống,
+                            sẽ đem đến cho bạn, gia đình và bạn bè những giai điệu tươi vui cho mùa xuân mới.
+                        </p>
+                        <!-- 2 -->
+                        <div class="itemsSecond__desc-btn">
+                            Tìm hiểu thêm
+                        </div>
+                    </div>
+                    <div class="itemSecond__img">
+                        <img src="{% static "images/logo.png" %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- store-address -->
+        <div class="store__wrap">
+            <div class="store">
+                <div class="store__content-wrap">
+                    <div class="store__desc">
+                        <h3 class="store__desc-title">
+                            The Coffee House 92 Lê Thanh Nghị - Hà Nội
+                        </h3>
+                        <div class="store__desc-content">
+                            Nhà Lê Thanh Nghị có thật nhiều khung cửa kính lớn đón nắng và ấm áp với tông nâu, hiện đại - thanh lịch; không "đụng hàng" bất kì nhà nào ở Hà Nội
+                        </div>
+                        <div class="store__desc-btn">
+                            Tìm hiểu thêm
+                        </div>
+                    </div>
+                    <div class="store__slide-img">
+                        <!-- slideshow -->
+                        <div class="store__slide-item">
+                            <img src={% static "images/logo.png" %} style="width: 100%; height: 100%"/>
+                        </div>
+                        <div class="store__slide-item hidden">
+                            <img src={% static "images/logo.png" %} style="width: 100%; height: 100%"/>
+                        </div>
+                        <div class="store__slide-item hidden">
+                            <img src={% static "images/logo.png" %} style="width: 100%; height: 100%"/>                        
+                        </div>
+                        <div class="store__slide-item hidden">
+                            <img src={% static "images/logo.png" %} style="width: 100%; height: 100%"/>                        
+                        </div>
+
+                        <div class="store__slide-btnNext">
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                        <div class="store__slide-btnPrev">
+                            <i class="fa-solid fa-caret-left"></i>
+                        </div>
+                        <div class="store__slide-listDot">
+                            <i class="fa-solid fa-circle dot__active"></i>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- blog -->
+        <div class="blog__wrap">
+            <div class="blog">
+                <div class="blog__titlewrap">                    
+                    <h2 class="blog__title">Chuyện Cà phê và Trà</h2>
+                </div>
+                <!-- blog coffee -->
+                <div class="blog__coffee">
+                    <h2 class="blog__coffee-title">Coffeeholic</h2>
+                    <ul class="blog__coffee-list">
+                        <li><a href="">
+                            <div class="blog__coffee-imgwrap">
+                                <img src={% static "images/logo.png" %} alt="">
+                            </div>
+                            <div class="blog__coffee-desc">
+                                <div class="blog__date">18/01/2022</div>
+                                <h3 class="blog__title-img" title="">Tại sao cà phê lại có vị chua?</h3>
+                                <p class="blog__content">
+                                    Vị đắng của cà phê thì ai cũng đã biết,
+                                    tuy nhiên bạn có biết cà phê còn có vị chua.
+                                    Và vị chua này lại chính là vị đặc...
+                                </p>
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="blog__coffee-imgwrap">
+                                <img src={% static "images/logo.png" %} alt="">
+                            </div>
+                            <div class="blog__coffee-desc">
+                                <div class="blog__date">17/01/2022</div>
+                                <h3 class="blog__title-img" title="">Gu thưởng thức cà phê của người sảnh điệu</h3>
+                                <p class="blog__content">
+                                    Cà phê mà người sành điệu thưởng thức sẽ như thế nào, bạn có tò mò về điều này? Tìm hiểu cùng The Coffee House qua những chia sẻ dưới...
+                                </p>
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="blog__coffee-imgwrap">
+                                <img src={% static "images/logo.png" %} alt="">
+                            </div>
+                            <div class="blog__coffee-desc">
+                                <div class="blog__date">15/01/2022</div>
+                                <h3 class="blog__title-img" title="">Kỹ thuật trồng cây cà phê năng suất, chất lượng cao</h3>
+                                <p class="blog__content">
+                                    Cà phê là cây có giá trị kinh tế cao khi nhu cầu tiêu thụ đang ngày càng tăng.
+                                    Đối với những loại cà phê đạt tiêu chuẩn xuất khẩu...
+                                </p>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- blog tea -->
+                <div class="blog__tea">
+                    <h2 class="blog__tea-title">Teaholic</h2>
+                    <ul class="blog__tea-list">
+                        <li><a href="">
+                            <div class="blog__tea-imgwrap">
+                                <img src="{% static "images/logo.png" %}" alt="">
+                            </div>
+                            <div class="blog__tea-desc">
+                                <div class="blog__date">18/01/2022</div>
+                                <h3 class="blog__title-img">Bạn có hiểu đúng về trà tươi và trà khô</h3>
+                                <p class="blog__content">
+                                    Trà tươi và trà khô là hai loại trà có sự khác biệt hoàn toàn.
+                                    Nếu bạn đang thắc mắc về hai loại trà này, cùng xem những thông tin...
+                                </p>
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="blog__tea-imgwrap">
+                                <img src="{% static "images/logo.png" %}" alt="">
+                            </div>
+                            <div class="blog__tea-desc">
+                                <div class="blog__date">12/01/2022</div>
+                                <h3 class="blog__title-img">Làm thế nào để thưởng thức trà như một chuyên gia?</h3>
+                                <p class="blog__content">
+                                    Những chuyên gia am hiểu về trà sẽ có cách thưởng thức để có thể cảm nhận được trọn vị
+                                    và tự mình tạo ra những phút giây thư thái...
+                                </p>
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="blog__tea-imgwrap">
+                                <img src="{% static "images/logo.png" %}" alt="">
+                            </div>
+                            <div class="blog__tea-desc">
+                                <div class="blog__date">11/01/2022</div>
+                                <h3 class="blog__title-img">Khi chén trà là đầu câu chuyện</h3>
+                                <p class="blog__content">
+                                    Chẳng biết từ bao giờ, chén trà lại trở nên thân thuộc, gần gũi với người Việt.
+                                    Không đơn thuần chỉ là một thức uống thông thường, thưởng trà trở...
+                                </p>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- blog normal-->
+                <div class="blog__normal">
+                    <h2 class="blog__normal-title">Blog</h2>
+                    <ul class="blog__normal-list">
+                        <li><a href="">
+                            <div class="blog__normal-imgwrap">
+                                <img src="{% static "images/logo.png" %}" alt="">
+                            </div>
+                            <div class="blog__normal-desc">
+                                <div class="blog__date">17/01/2022</div>
+                                <h3 class="blog__title-img">The coffee house ra mắt 3 "sung" để để bắt đầu năm hổ</h3>
+                                <p class="blog__content">
+                                    Chia tay năm cũ với những nốt trầm, Tết này hãy cùng The Coffee House nạp cho mình 3
+                                    “Sung” để bắt đầu một năm Hổ đầy năng lượng, mãnh...
+                                </p>
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="blog__normal-imgwrap">
+                                <img src="{% static "images/logo.png" %}" alt="">
+                            </div>
+                            <div class="blog__normal-desc">
+                                <div class="blog__date">15/01/2022</div>
+                                <h3 class="blog__title-img">Tết cận kề, fans the coffee house có quà mới</h3>
+                                <p class="blog__content">
+                                    Sắp sửa đón một cái Tết mới, Nhà chuẩn bị ra mắt Bộ sưu tập (BST) sản phẩm Tết,
+                                    như là những món quà tặng ý nghĩa trao gửi đến...
+                                </p>
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="blog__normal-imgwrap">
+                                <img src="{% static "images/logo.png" %}" alt="">
+                            </div>
+                            <div class="blog__normal-desc">
+                                <div class="blog__date">14/01/2022</div>
+                                <h3 class="blog__title-img">Tearoma - tự tin sống trẻ, bừng phong cách</h3>
+                                <p class="blog__content">
+                                    Tearoma của The Coffee House như một “cô gái” phóng khoáng,
+                                    tự tin sống trẻ và bừng lên phong cách riêng đầy cuốn hút. Bạn là người trẻ hiện đại,...
+                                </p>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+    {% comment %} </div>     {% endcomment %}
+
+    <script src="{%static 'js/home.js'%}"></script>
 {% endblock main-content %}
