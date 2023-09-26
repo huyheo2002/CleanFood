@@ -1,0 +1,72 @@
+{% extends 'app/base.html' %} {% load static %} {% block menu-content%}
+{% endblock menu-content %} 
+
+{% block main-content %}
+<div class="menu_container" > 
+  <div >  
+    {% comment %} <img src={% static "images/poster1.png" %} class="d-block w-100" alt="..." /> {% endcomment %}
+   {%comment%}
+      {% for user in users %}
+        {% if forloop.first %}
+      <section class="col-3 my-5">
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src={{user.avatar.url}} class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold"><a>{{user.username}}</a></h5>
+            <ul class="list-unstyled list-inline mb-0">
+              <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"> </i>
+              </li>
+              <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"></i>
+              </li>
+              <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"></i>
+              </li>
+              <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fas fa-star-half-alt text-warning fa-xs"></i>
+              </li>
+              <li class="list-inline-item">
+                <p class="text-muted">4.5 (413)</p>
+              </li>
+            </ul> 
+            <p class="mb-2">$ • {{user.name}}VND</p>
+            <p class="card-text">
+             {{product.desc}} 
+            </p>
+            <hr class="my-4"/>          
+            <a href="#!" class="btn btn-primary">Add to card</a>
+            <a href="#!" class="btn btn-primary">Info</a>          
+          </div>
+        </div>      
+      </section>    
+  
+      {% endif %}
+      {% endfor %}
+      {%endcomment%}
+      <div style="margin-left: 20px; display:flex;justify-content: center;">
+        <button type="button" class="btn btn-outline-primary" style="font-weight: 700;margin-right: 20px; font-size: 18px;padding: 10px 20px;">Primary</button>
+        <button type="button" class="btn btn-outline-secondary" style="font-weight: 700;margin-right: 20px; font-size: 18px;padding: 10px 20px;">Secondary</button>
+        <button type="button" class="btn btn-outline-success"style="font-weight: 700;margin-right: 20px; font-size: 18px;padding: 10px 20px;">Success</button>
+        <button type="button" class="btn btn-outline-danger"style="font-weight: 700;margin-right: 20px; font-size: 18px;padding: 10px 20px;">Danger</button>
+        <button type="button" class="btn btn-outline-warning"style="font-weight: 700;margin-right: 20px; font-size: 18px;padding: 10px 20px;">Warning</button>
+        <button type="button" class="btn btn-outline-info"style="font-weight: 700;margin-right: 20px; font-size: 18px;padding: 10px 20px;">Info</button>
+        <button type="button" class="btn btn-outline-light"style="font-weight: 700;margin-right: 20px; font-size: 18px;padding: 10px 20px;">Light</button>
+        <button type="button" class="btn btn-outline-dark"style="font-weight: 700;margin-right: 20px; font-size: 18px;padding: 10px 20px;">Dark</button>
+      {% comment %} <h1>welcome to my website</h1>  {% endcomment %}
+      </div>
+  
+  </div>
+
+</div>
+
+
+{% endblock main-content %}

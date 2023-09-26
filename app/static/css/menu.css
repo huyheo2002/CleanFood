@@ -1,0 +1,47 @@
+/* main */
+.main {
+    min-height: 100vh;
+    position: relative;
+    height: 100%;
+}
+
+.navbar__logo {
+    max-width: 80px;
+    height: 100%;
+}
+
+.slider_wrapper {
+    width: 800px;
+    margin: 15px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slider_custom {
+    /* padding: 15px 25px; */
+    height: 400px;    
+}
+
+.slider_custom > .carousel-item, .slider_custom > .carousel-item > img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* Content*/
+.menu_container{
+    background-color: rgb(182, 54, 67);
+    /* display: flex; */
+    position: relative;
+
+}
+
+/* footer */
+/* footer-top :v */
+a.me-4.link-secondary {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+a.me-4.link-secondary > i {
+    font-size: 22px;
+}

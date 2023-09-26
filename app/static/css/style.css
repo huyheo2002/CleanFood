@@ -15,6 +15,7 @@
     margin: 15px auto;
     border-radius: 15px;
     overflow: hidden;
+   
 }
 
 .slider_custom {
@@ -37,4 +38,7 @@ a.me-4.link-secondary {
 
 a.me-4.link-secondary > i {
     font-size: 22px;
+}
+li >i {
+    list-style-type: none ;
 }

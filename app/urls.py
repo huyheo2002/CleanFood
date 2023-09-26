@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     path("", views.getHomepage),
-    # path("/1", views.index),
+    path("menu/", views.getMenupage,name='menu'),
 ]

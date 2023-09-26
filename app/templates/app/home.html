@@ -3,7 +3,7 @@
   <ol class="carousel-indicators">
     <li
       data-target="#carouselExampleIndicators"
-      data-slide-to="0"
+      data-slide-to="0" 
       class="active"
     ></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -45,7 +45,7 @@
 <div class="container">  
   {% comment %} row {% endcomment %}
   <div class="row">
-    {% comment %} card {% endcomment %}
+    {% comment %} card 
     {% for product in products %}
     <section class="col-3 my-5">
       <div class="card">
@@ -57,7 +57,7 @@
         </div>
         <div class="card-body">
           <h5 class="card-title font-weight-bold"><a>{{product.name}}</a></h5>
-          {% comment %} <ul class="list-unstyled list-inline mb-0">
+          <ul class="list-unstyled list-inline mb-0">
             <li class="list-inline-item me-0">
               <i class="fas fa-star text-warning fa-xs"> </i>
             </li>
@@ -76,7 +76,7 @@
             <li class="list-inline-item">
               <p class="text-muted">4.5 (413)</p>
             </li>
-          </ul> {% endcomment %}
+          </ul> 
           <p class="mb-2">$ • {{product.price}}VND</p>
           <p class="card-text">
             {{product.desc}}
@@ -88,6 +88,7 @@
       </div>      
     </section>    
     {% endfor %}
+    {% endcomment %}
   </div>
 </div>
 <h1>welcome to my website</h1>
