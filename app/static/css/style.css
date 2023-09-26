@@ -1,44 +1,608 @@
-/* main */
-.main {
-    min-height: 100vh;
+/* header fix */
+/* file này css dùng chung cho nhiều file khác :v  */
+/* cụ thể trang 
+    - home.html
+    - coffee.html
+    - tea.html
+    - menu.html
+    - khaitruong.html ~ ưu đãi thành viên
+    - story1.html
+    - shop.html
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#main{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     position: relative;
+}
+
+.header__wrap{
+    height: 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFF7E6;
+    position: fixed;
+    z-index: 999;
+    user-select: none;
+}
+
+.header{
+    width: 80%;
     height: 100%;
+    margin: 0 10%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
-.navbar__logo {
-    max-width: 80px;
-    height: 100%;
+.header__logo{
+    width: 240px;
+    height: 20px;
+    margin: 20px 0;
 }
 
-.slider_wrapper {
-    width: 800px;
-    margin: 15px auto;
-    border-radius: 15px;
-    overflow: hidden;
-   
-}
-
-.slider_custom {
-    /* padding: 15px 25px; */
-    height: 400px;    
-}
-
-.slider_custom > .carousel-item, .slider_custom > .carousel-item > img {
+.header__logo img{
     width: 100%;
     height: 100%;
+}
+
+.header__nav{
+    height: 60px;
+    line-height: 60px;
+}
+
+.list__nav{
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+}
+
+.list__nav li{
+    padding: 0 15px;
+    /* transition: 1s ease; */
+}
+
+.list__nav li:hover a{
+    /* background-color: #ccc; */
+    color: #ea8025;
+    transition: 0.5s ease;
+}
+
+.list__nav li:hover .subnav{
+    display: flex;
+    animation: subnavHover 0.5s;
+}
+
+/* fix items header hover */
+/* .list__nav li:hover ul.dropdown-menu{
+    background-color: #fff;
+    color: #000;
+    display: block;
+} */
+
+ul.dropdown-menu {
+    list-style-type: none;
+    background-color: #fff;
+    display: none;
+    width: 145px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+li.nav-item.dropdown.d-flex {
+    width: 125px;
+    position: relative;
+    /* ADD: overflow hidden nếu tên dài quá hiển thị 3 ... */
+    white-space: nowrap;
+    /* sao overflow vào hỏng cm chức năng nhỉ :v */
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+}
+
+.overlay__textUser {
+    width: 100%;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list__nav li.nav-item.dropdown.d-flex:hover ul.dropdown-menu{
+    background-color: #fff;
+    /* display: block; */
+}
+
+.list__nav li:hover a.dropdown-item{
+    color: #000;
+}
+
+ul.dropdown-menu li:hover a.dropdown-item{
+    color: #ea8025;
+}
+
+.list__nav a{
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.list__nav i{
+    transform: translateY(-25%);
+}
+
+.js-login a{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.js-login a i{
+    font-size: 25px;
+    width: 25px;
+    margin-left: 8px;
+    margin-top: 12px;
+}
+
+.subnav{
+    position: absolute;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    right: 0;
+    left: 0;
+    top: 60px;
+    padding-bottom: 2%;
+    justify-content: space-evenly;
+    display: none;
+    margin: 0 -15%;
+    padding: 0 15% 2%;
+}
+
+.subnav .subnav__items{
+    width: 200px;
+}
+
+.subnav__items:hover h3{
+    color: #ea8025;
+    border-bottom: #ea8025 3px solid;
+}
+
+.subnav__items p:hover{
+    color: #ea8025;
+}
+
+.subnav__items .title__menu , .subnav__items .title__story{
+    border-bottom: #333 3px solid;
+    color: #333;
+    transition: all 0.5s ease;
+}
+
+.subnav__items p{
+    font-size: 14px;
+    color: #666;
+    line-height: 32px;
 }
 
 /* footer */
-/* footer-top :v */
-a.me-4.link-secondary {
-    display: inline-block;
-    padding: 5px 10px;
+.footer__wrap{
+    width: 100%;
+    background-color: #000000D9;
 }
 
-a.me-4.link-secondary > i {
-    font-size: 22px;
+.footer{
+    width: 80%;
+    /* height: 100%; */
+    margin: 0 10%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between;
 }
-li >i {
-    list-style-type: none ;
+
+.footer__introduce , .footer__rules , .footer__hotline , .footer__socials{
+    width: 300px;
+    line-height: 22px;
+    position: relative;
+}
+
+.introduce__title , .rules__title , .hotline__phone , .hotline__contact{
+    margin-bottom: 5px;
+    color: #191919;
+}
+
+/* introduce */
+.introduce__title{
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.introduce__list{
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.introduce__list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* rules */
+.rules__title{
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.rules__list{
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.rules__list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* hotline */
+.hotline__phone , .hotline__contact{
+    display: flex;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.hotline__phone i , .hotline__contact i{
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+}
+
+.hotline__address{
+    color: #fff;
+    font-size: 14px;
+}
+
+/* social */
+.social_bg{
+    width: 100%;
+    height: 150px;
+    /* background: url(/assets/img/items-hot/footerBgLogo.jpg) center/cover no-repeat; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.social_bg .social__bgImg{
+    width: 100%;
+    height: 100%;
+}
+
+.social__logo{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    z-index: 50;
+}
+
+.social__logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.social__desc {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 15;
+}
+
+.social__name{
+    width: 100%;
+    height: 72px;
+    padding-top: 12px;
+    padding-left: 72px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social__name p{
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgb(0 0 0 / 90%);
+}
+
+.verifi{
+    width: 25px;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.verifi img{
+    width: 100%;
+    height: 100%;
+}
+
+.social__inter {
+    position: absolute;
+    top: 38px;
+    left: 72px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgb(0 0 0 / 90%);
+    font-size: 14px;
+}
+
+.social__interacWrap-botton{
+    position: absolute;
+    height: 30px;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social__like{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    line-height: 20px;
+    color: #111;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+.social__share{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    line-height: 20px;
+    background: #fff;
+    color: #111;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+.social__share:hover , .social__like:hover{
+    opacity: 0.8;
+}
+
+.social__like p , .social__share p{
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.social__like i , .social__share i{
+    font-size: 14px;
+    padding-right: 3px;
+}
+
+.social__icon{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+}
+
+.social__icon i{
+    font-size: 28px;
+    color: #fff;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+/* animation */
+@keyframes subnavHover {
+    from{
+        margin-top: 50px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0;
+        opacity: 1;
+    }
+    
+}
+
+/* create modal login */
+/* creative overlay */
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* sd để ẩn modal đi */
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal__container {
+    background-color: #fff;
+    width: 800px;
+    max-width: calc(100% - 32px); /* khi thu nho man duoi 800px se co khoang cach 2 ben la 32px ~~ responsive*/
+    min-height: 300px;
+    animation: modalFadeIn ease 0.5s ;
+    position: relative;
+}
+
+.modal__header {
+    /* background-color: #000; */
+    /* opacity: 0.3; */
+    height: 70px;
+    width: auto;
+    text-align: center;
+}
+
+.modal__header__title{
+    text-align: center;
+    color: #000;
+    background-color: #FFF7E6;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 70px;
+    border-bottom: 1px solid #3b4354;
+    text-transform: capitalize;
+    user-select: none;    
+}
+
+.modal__header img {
+    height: 100%;
+    width: 100%;
+}
+
+.modal__close.js-modal-close {
+    position: absolute;
+    right: 0;
+}
+
+.modal__close i{
+    font-size: 28px;
+    color: red;
+    padding: 8px;
+    transition: all linear 0.5s;
+}
+
+.modal__close.js-modal-close:hover i{
+    transform: rotate(360deg);
+}
+
+.modal__close-ic {
+    padding: 10px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.modal__body {
+    padding: 10px;
+    margin: 0 24px;
+}
+
+.modal__label , .modal__login{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.modal__input-user , .modal__input-pass {
+    width: 100%;
+    border: 1px #ccc solid;
+    padding: 10px;
+    margin-bottom: 22px;
+}
+
+.modal__login {
+    width: 100%;
+    padding: 10px;
+    font-size: 22px;
+    background-color: #3b4354;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal__login:hover {
+    opacity: 0.8;
+}
+
+.modal__footer {
+    margin: 0 34px;
+}
+
+.modal__footer-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: -10px;
+    font-weight: 500;
+}
+
+
+.modal__footer-head a {
+    text-decoration: none;
+    color: #000;
+}
+
+.modal__footer-head a:hover{
+    opacity: 0.3;
+}
+
+.modal__footer-subhead {
+    text-align: center;
+    opacity: 0.6;
+}
+
+.modal__footer-icon {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin: 12px 0;
+    padding: 0 155px;
+    justify-content: space-around;
+}
+
+.modal__footer-icon img {
+    width: 50px;
+    height: 100%;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.modal__footer-icon img:hover {
+    opacity : 0.8;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
 }

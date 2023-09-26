@@ -21,8 +21,7 @@
 
 #main{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    position: relative;    
-    overflow: hidden;
+    position: relative;
 }
 
 .header__wrap{
@@ -625,121 +624,18 @@ ul.dropdown-menu li:hover a.dropdown-item{
     display: block !important;
 }
 
+
 /* page */
-/* container menu */
-.menu__Container_Wrapper {
+.poster{
+    /* background: no-repeat center/cover url("/assets/img/coffee-tea/coffee/slider-coffee.jpeg"); */
+    height: 400px;
     position: relative;
+    margin-top: 60px;
 }
 
-.menu__Container{
-    width: 100%;
-    /* height: 14870px; */
-    padding: 100px 10% 0;
-    background-color: #fff;
-    position: relative;
-    top: 0;
-    bottom: 360px;
-    z-index: 20;
-    display: flex;
-    user-select: none;
-}
-
-.menu__Sidebar{
-    width: 25%;
-    /* margin: calc(60px + 2.5%) 0 2.5%; */
-    position: sticky;
-    left: 0;
-    top: 60px;
-    bottom: 0;
-    z-index: 10;
-    margin-bottom: 15px;
-    height: 520px;
-}
-
-.menu__listItems{
-    list-style-type: none;
-    padding-left: 50px;
-    user-select: none;
-}
-
-.menu__listItems{
-    padding: 2px 0;
-    position: relative;
-}
-
-.menu__listItems li{
-    line-height: 28px;
-    cursor: pointer;
-}
-
-.menu__listItems .menu__items{
-    text-decoration: none;
-    color: #00000099;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    /* cursor: pointer; */
-}
-
-.menu__listItems li:hover .menu__items{
-    color: #EA8025;
-}
-
-.menu__subnav-items:hover a{
-    color: #EA8025;
-}
-
-.menu__dotCoffee{
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-    visibility: hidden;
-}
-
-.menu__dotCoffee img{
+.poster img{
     width: 100%;
     height: 100%;
-    color: #EA8025;
-}
-
-.menu__subnav{
-    padding-left: 50px;
-    list-style-type: disc;
-}
-
-.menu__subnav a{
-    font-size: 14px;
-    color: #00000099;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.menu__content{
-    width: 75%;
-    position: relative;
-    right: 0;
-    top: 0;
-    border-left: 2px solid #ccc;
-}
-
-.menuContent__wrap{
-    width: 95%;
-    height: 100%;
-    margin-left: 5%;
-}
-/* menu content */
-.menu__promote{
-    width: 100%;
-    height: 350px;
-}
-
-.menu__promote img{
-    width: 100%;
-    height: 100%;
-}
-
-.menu__listItems-wrap{
-    width: 100%;
 }
 
 /* items hot */
@@ -750,15 +646,16 @@ ul.dropdown-menu li:hover a.dropdown-item{
 }
 
 .title__itemTea{
-    margin: 25px 0;
-    margin-left: 8px;
+    width: 80%;
+    margin: 50px 11% 20px;
     font-size: 24px;
     font-family: 'SF Pro Display', sans-serif;
     font-weight: bold;
 }
 
 .itemsHot__list{
-    width: 100%;
+    width: 80%;
+    margin: 0px 10%;
     list-style-type: none;
     display: flex;
     /* justify-content: space-around; */
@@ -767,8 +664,7 @@ ul.dropdown-menu li:hover a.dropdown-item{
 
 .itemsHot__list li{
     margin-bottom: 30px;
-    padding: 0 14px;
-    position: relative;
+    padding: 0 16px;
 }
 
 .itemsHot__list a{
@@ -776,8 +672,8 @@ ul.dropdown-menu li:hover a.dropdown-item{
 }
 
 .itemHot__imgWrap{
-    width: 260px;
-    height: 260px;
+    width: 270px;
+    height: 270px;
     border-radius: 15px;
     box-shadow: 0px 0px 13px 0px #00000040;
     overflow: hidden;
@@ -789,32 +685,13 @@ ul.dropdown-menu li:hover a.dropdown-item{
 }
 
 .itemHot__content{
-    width: 65%;
-    max-width: 260px;
+    width: 270px;
     margin-top: 10px;
-}
-
-.itemHot__cart{
-    position: absolute;
-    bottom: 12px;
-    right: 30px;
-}
-
-.itemHot__cart i{
-    font-size: 22px;
-    color: #EA8025;
-}
-
-.itemHot__cart:hover {
-    transform: scale(1.4);
 }
 
 .itemHot__title{
     font-size: 17px;
     color: #191919;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 .itemHot__value{
@@ -822,24 +699,7 @@ ul.dropdown-menu li:hover a.dropdown-item{
     padding-top: 5px;
 }
 
-/* fix js */
-.show{
-    display: block;
-}
-
-.hide{
-    display: none;
-}
-
-.glow{
-    color: #EA8025 !important;
-}
-
-.visible{
-    visibility: visible;
-}
-
-/* effect items hover */
+/* products hover */
 .itemHot__title, .itemHot__imgWrap img{
     transition: all linear 0.4s;
 }
@@ -848,9 +708,6 @@ ul.dropdown-menu li:hover a.dropdown-item{
     color: #EA8025;
 }
 
-
 .itemsHot__wrap li:hover .itemHot__imgWrap img{
     transform: scale(1.2);
 }
-
-
