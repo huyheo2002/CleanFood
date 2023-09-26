@@ -5,7 +5,8 @@ from .models import *
 
 def getHomepage(request):
     products = Products.objects.all()
-    context = {"products": products}
+    users=Users.objects.all()
+    context = {"products": products,"users" : users}
     return render(request, "app/home.html", context)
 
 def getNewspage(request):    
@@ -29,3 +30,7 @@ def getProductDetailpage(request):
 def index(request):
     return HttpResponse("this is pages test")
 
+def getMenupage(request):
+    users=Users.objects.all()
+    context={"users" : users}
+    return render(request, "app/menu.html", context)
