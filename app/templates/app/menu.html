@@ -3,7 +3,14 @@
     <title>Sản phẩm</title>
     <link rel="stylesheet" href="{%static 'css/menu.css' %}" />
     <link rel="stylesheet" href="{%static 'css/style.css' %}" />
-    <link rel="stylesheet" href="{%static 'responsive/base.css' %}" />       
+    <link rel="stylesheet" href="{%static 'responsive/base.css' %}" />
+    <style>
+        button:hover {
+            background-color: #ff9933 !important;
+            color: #fff !important;
+            border: #ff9933 1px solid !important;
+        }
+    </style>       
     {% comment %} <link rel="stylesheet" href="{%static 'css/style.css' %}" /> {% endcomment %}
 {% endblock head-content %}
 {% block main-content %}
@@ -21,52 +28,52 @@
                     <div class="menu__dotCoffee" id="dotCoffee-2">
                         <img src="{%static "images/logo.png"%}" alt="">
                     </div>
-                    <p class="menu__text">Cà Phê</p>
+                    <p class="menu__text">Thịt và gia súc</p>
                     <ul class="menu__subnav">
-                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Cà Phê Việt Nam</a></li>
-                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Cà Phê Máy</a></li>
-                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Cold Brew</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Thịt gà và gia cầm</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Thịt bò và súc vật lớn</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Thịt heo và gia súc khác</a></li>
                     </ul>
                 </a></li>
                 <li class="menu__itemsBlock"><a href="#" class="menu__items menu__items-link" id="menu__item-3">
                     <div class="menu__dotCoffee" id="dotCoffee-3">
                         <img src="{%static "images/logo.png"%}" alt="">
                     </div>
-                    <p class="menu__text">Trà</p>
+                    <p class="menu__text">Rau và cây ăn quả</p>
                     <ul class="menu__subnav">
-                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Trà Trái Cây</a></li>
-                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Trà Sữa Macchiato</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Rau xanh</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Cây ăn quả</a></li>
                     </ul>
                 </a></li>
                 <li class="menu__itemsBlock"><a href="#" class="menu__items menu__items-link" id="menu__item-4">
                         <div class="menu__dotCoffee" id="dotCoffee-4">
                             <img src="{%static "images/logo.png"%}g" alt="">
                         </div>
-                        <p class="menu__text">Món Khác</p>
+                        <p class="menu__text">Sản phẩm hữu cơ</p>
                         <ul class="menu__subnav">
-                            <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Đá Xay</a></li>
-                            <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Matcha - Socola</a></li>
+                            <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Trái cây hữu cơ</a></li>
+                            <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Rau hữu cơ</a></li>
                         </ul>
                     </a></li>
                 <li class="menu__itemsBlock"><a href="#" class="menu__items menu__items-link" id="menu__item-5">
                     <div class="menu__dotCoffee" id="dotCoffee-5">
                         <img src="{%static "images/logo.png"%}" alt="">
                     </div>
-                    <p class="menu__text">Bánh</p>
+                    <p class="menu__text">Thực phẩm biển</p>
                     <ul class="menu__subnav">
-                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Bánh Mặn</a></li>
-                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Bánh Ngọt</a></li>
-                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Snack</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Tôm và sò điệp</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Cá biển</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Hải sản khác</a></li>
                     </ul>
                 </a></li>
                 <li class="menu__itemsBlock"><a href="#" class="menu__items menu__items-link" id="menu__item-6">
                     <div class="menu__dotCoffee" id="dotCoffee-6">
                         <img src="{%static "images/logo.png"%}" alt="">
                     </div>
-                    <p class="menu__text">Tại Nhà</p>
+                    <p class="menu__text">Sản phẩm khác</p>
                     <ul class="menu__subnav">
-                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Cà Phê Tại Nhà</a></li>
-                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Trà Tại Nhà</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Sản phẩm từ sữa</a></li>
+                        <li class="menu__subnav-items"><a href="#" class="menu__subnav-link menu__items-link" onclick="isCheckPropagation(event)">Lên men</a></li>
                     </ul>
                 </a></li>
             </ul>
@@ -75,409 +82,362 @@
             <div class="menuContent__wrap">
                 <div class="menu__promote">
                     <img src="{%static "images/logo.png"%}" alt="">
-                </div>
-                <!-- coffee VN -->
-                <!-- menu items-hot -->
+                </div>                
                 <div class="itemsHot__wrap">
-                    <!-- cà phê việt nam -->
-                    <h3 class="title__itemTea">Cà Phê Việt Nam</h3>
+                    <!-- Thịt gà và gia cầm -->
+                    <h3 class="title__itemTea">Thịt gà và gia cầm</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "chicken" %}
                         <li>
-                            <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                            <a>
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
+                                        {% comment %} <div>ID : {{product.id}}</div> {% endcomment %}
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                  
+                                </div>                                
                             </a>
                         </li>
-                        <li>
-                            <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
-                                </div>
-                                <div class="itemHot__content" title="">
-                                    <h3 class="itemHot__title">
-                                        hello
-                                    </h3>
-                                    <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
-                                </div>
-                                <div class="itemHot__content" title="">
-                                    <h3 class="itemHot__title">
-                                        hello
-                                    </h3>
-                                    <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
-                                </div>
-                                <div class="itemHot__content" title="">
-                                    <h3 class="itemHot__title">
-                                        hello
-                                    </h3>
-                                    <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
-                                </div>
-                                <div class="itemHot__content" title="">
-                                    <h3 class="itemHot__title">
-                                        hello
-                                    </h3>
-                                    <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
-                                </div>
-                                <div class="itemHot__content" title="">
-                                    <h3 class="itemHot__title">
-                                        hello
-                                    </h3>
-                                    <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
-                                </div>
-                                <div class="itemHot__content" title="">
-                                    <h3 class="itemHot__title">
-                                        hello
-                                    </h3>
-                                    <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
-                                </div>
-                                <div class="itemHot__content" title="">
-                                    <h3 class="itemHot__title">
-                                        hello
-                                    </h3>
-                                    <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </a>
-                        </li>
+                        {% endif %}
+                        {% endfor %}                        
                     </ul>
 
-                    <!-- cà phê máy -->
-                    <h3 class="title__itemTea">Cà Phê Máy</h3>
+                    <!-- Thịt bò và súc vật lớn -->
+                    <h3 class="title__itemTea">Thịt bò và súc vật lớn</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "beef" %}
                         <li>
                             <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
                             </a>
                         </li>
+                        {% endif %}
+                        {% endfor %} 
                     </ul>
 
-                    <!-- Cold brew -->
-                    <h3 class="title__itemTea">Cold Brew</h3>
+                    <!-- Thịt heo và gia súc khác -->
+                    <h3 class="title__itemTea">Thịt heo và gia súc khác</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "pork" %}
                         <li>
                             <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
                             </a>
                         </li>
+                        {% endif %}
+                        {% endfor %} 
                     </ul>
 
-                    <!-- Trà trái cây -->
-                    <h3 class="title__itemTea">Trà Trái Cây</h3>
+                    <!-- Rau xanh -->
+                    <h3 class="title__itemTea">Rau xanh</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "vegetable" %}
                         <li>
                             <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
                             </a>
                         </li>
+                        {% endif %}
+                        {% endfor %} 
                     </ul>
 
-                    <!-- Trà sữa Macchiato -->
-                    <h3 class="title__itemTea">Trà Sữa Macchiato</h3>
+                    <!-- Cây ăn quả -->
+                    <h3 class="title__itemTea">Cây ăn quả</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "fruit" %}
                         <li>
                             <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
                             </a>
                         </li>
+                        {% endif %}
+                        {% endfor %} 
                     </ul>
 
-                    <!-- Đá xay -->
-                    <h3 class="title__itemTea">Đá Xay</h3>
+                    <!-- Trái cây hữu cơ -->
+                    <h3 class="title__itemTea">Trái cây hữu cơ</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "organic-vegetable" %}
                         <li>
                             <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
                             </a>
                         </li>
+                        {% endif %}
+                        {% endfor %} 
                     </ul>
 
-                    <!-- matcha - socola -->
-                    <h3 class="title__itemTea">Matcha - Socola</h3>
+                    <!-- Rau hữu cơ -->
+                    <h3 class="title__itemTea">Rau hữu cơ</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "organic-fruit" %}
                         <li>
                             <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
                             </a>
                         </li>
+                        {% endif %}
+                        {% endfor %} 
                     </ul>
 
-                    <!-- Bánh mặn -->
-                    <h3 class="title__itemTea">Bánh Mặn</h3>
+                    <!-- Tôm và sò điệp -->
+                    <h3 class="title__itemTea">Tôm và sò điệp</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "shrimp" %}
                         <li>
                             <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
                             </a>
                         </li>
+                        {% endif %}
+                        {% endfor %} 
                     </ul>
 
-                    <!-- Bánh ngọt -->
-                    <h3 class="title__itemTea">Bánh Ngọt</h3>
+                    <!-- Cá biển -->
+                    <h3 class="title__itemTea">Cá biển</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "fish" %}
                         <li>
                             <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
                             </a>
                         </li>
+                        {% endif %}
+                        {% endfor %} 
                     </ul>
 
-                    <!-- snack -->
-                    <h3 class="title__itemTea">Snack</h3>
+                    <!-- Hải sản khác -->
+                    <h3 class="title__itemTea">Hải sản khác</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "other-seafood" %}
                         <li>
                             <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
                             </a>
                         </li>
+                        {% endif %}
+                        {% endfor %} 
                     </ul>
 
-                    <!-- Cà phê tại nhà -->
-                    <h3 class="title__itemTea">Cà Phê Tại Nhà</h3>
+                    <!-- Sản phẩm từ sữa -->
+                    <h3 class="title__itemTea">Sản phẩm từ sữa</h3>
                     <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "milk-product" %}
                         <li>
                             <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
                                 </div>
                                 <div class="itemHot__content" title="">
                                     <h3 class="itemHot__title">
-                                        hello
+                                        {{product.name}}
                                     </h3>
                                     <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </a>
-                        </li>                        
-                    </ul>
-                    <!-- Trà tại nhà -->
-                    <h3 class="title__itemTea">Trà Tại Nhà</h3>
-                    <ul class="itemsHot__list">
-                        <li>
-                            <a href="">
-                                <div class="itemHot__imgWrap">
-                                    <img src="{%static "images/logo.png"%}" alt="">
-                                </div>
-                                <div class="itemHot__content" title="">
-                                    <h3 class="itemHot__title">
-                                        hello
-                                    </h3>
-                                    <p class="itemHot__value">
-                                        500.000
-                                    </p>
-                                </div>
-                                <div class="itemHot__cart" onclick="isCheckPropagation(event)" id="btnAddToCart" data-product-id="<?= $product['id'] ?>">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
                             </a>
                         </li>
+                        {% endif %}
+                        {% endfor %}                         
+                    </ul>
+                    <!-- Lên men -->
+                    <h3 class="title__itemTea">Lên men</h3>
+                    <ul class="itemsHot__list">
+                        {%for product in products%}
+                        {% if product.category.name == "ferment" %}
+                        <li>
+                            <a href="">
+                                <div class="itemHot__imgWrap" style="position: relative;">
+                                    {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
+                                    <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
+                                    <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="itemHot__content" title="">
+                                    <h3 class="itemHot__title">
+                                        {{product.name}}
+                                    </h3>
+                                    <p class="itemHot__value">
+                                        {{product.price | floatformat:3 }} VNĐ
+                                    </p>                                    
+                                </div>                                
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% endfor %} 
                     </ul>
                 </div>
             </div>
@@ -491,4 +451,5 @@
         }
     </script>
     <script src="{%static 'js/menu.js'%}"></script> 
+    <script src="{%static 'js/cart.js'%}"></script> 
 {% endblock main-content %}

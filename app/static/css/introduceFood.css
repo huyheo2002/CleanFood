@@ -643,6 +643,7 @@ ul.dropdown-menu li:hover a.dropdown-item{
     width: 100%;
     background-color: #fff;
     margin-bottom: 50px;
+    padding-top: 50px;
 }
 
 .title__itemTea{
@@ -655,7 +656,7 @@ ul.dropdown-menu li:hover a.dropdown-item{
 
 .itemsHot__list{
     width: 80%;
-    margin: 0px 10%;
+    margin: 50px 10%;
     list-style-type: none;
     display: flex;
     /* justify-content: space-around; */
