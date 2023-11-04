@@ -7,5 +7,4 @@ admin.site.register(Products)
 admin.site.register(Orders)
 admin.site.register(OrderItem)
 admin.site.register(ShippingAddress)
-admin.site.register(Role)
 
