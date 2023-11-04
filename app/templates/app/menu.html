@@ -133,8 +133,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
@@ -162,8 +170,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
@@ -191,8 +207,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
@@ -220,8 +244,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
@@ -249,8 +281,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
@@ -278,8 +318,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
@@ -307,8 +355,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
@@ -336,8 +392,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
@@ -365,8 +429,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
@@ -394,8 +466,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
@@ -422,8 +502,16 @@
                                     {% comment %} <img src="{{product.thumbnail.url}}" alt=""> {% endcomment %}
                                     <img src="{% if product.thumbnail %} {{ product.thumbnail.url }}{% else %}https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg{% endif %}" alt="">
                                     <div style="display: inline-block; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); padding: 10px 20px;">
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">View</button>
-                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;">Add to cart</button>
+                                        <a href="/productDetail?id={{product.id}}" style="display: inline-block; background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px; margin-right: 10px;">
+                                            View
+                                        </a>
+                                        <button style="background-color: #ea8025; color: #fff; padding: 5px 10px; border: #ea8025 1px solid; cursor: pointer; font-size: 16px; font-weight: 400; border-radius: 10px;"
+                                            class="update-cart"
+                                            data-product={{product.id}}
+                                            data-action="add"
+                                        >
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="itemHot__content" title="">
