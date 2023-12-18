@@ -8,35 +8,14 @@
 <div class="wrapper">
   <div class="checkout-container">
     <h1>Thanh toán</h1>
-    <form>
-      <div class="form-group">
-        <label for="name">Tên của bạn:</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div class="form-group">
-        <label for="address">Địa chỉ giao hàng:</label>
-        <input type="text" id="address" name="address" required />
-      </div>
-      <div class="form-group">
-        <label for="card">Số thẻ tín dụng:</label>
-        <input type="text" id="card" name="card" required />
-      </div>
-      <div class="form-group">
-        <label for="exp-date">Ngày hết hạn:</label>
-        <input type="text" id="exp-date" name="exp-date" required />
-      </div>
-      <div class="form-group">
-        <label for="cvv">CVV:</label>
-        <input type="text" id="cvv" name="cvv" required />
-      </div>
-      <div class="list__btn">
-        <button type="submit">Xác nhận thanh toán</button>
-        <a href="/cart" class="btn__back">Trở về</a>
-      </div>
+    <form method="POST" action="{% url 'checkout' %}">
+        {% csrf_token %}
+        {{ shipping_address_form.as_p }}
+
+        <div class="list__btn">
+            <button type="submit">Xác nhận thanh toán</button>
+            <a href="/cart" class="btn__back">Trở về</a>
+        </div>
     </form>
   </div>
 
@@ -80,3 +59,28 @@
   </div>
 </div>
 {% endblock main-content %}
+{% comment %} <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.querySelector('#checkout-form');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Kiểm tra nếu người dùng đã nhập đầy đủ thông tin
+      var name = document.getElementById('id_address').value;
+      var email = document.getElementById('id_city').value;
+      var address = document.getElementById('id_stay').value;
+      var card = document.getElementById('id_phone').value;
+
+      if (name && email && address && card) {
+        // Hiển thị alert về đặt hàng thành công
+        alert('Đặt hàng thành công!');
+
+        // Chuyển hướng về trang home sau khi người dùng bấm OK
+        window.location.href = '/';
+      } else {
+        // Nếu không đầy đủ thông tin, bạn có thể thực hiện các xử lý khác hoặc hiển thị cảnh báo khác
+        alert('Vui lòng nhập đầy đủ thông tin!');
+      }
+    });
+  });
+</script> {% endcomment %}

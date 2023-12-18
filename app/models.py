@@ -8,11 +8,12 @@ class CreateUserForm(UserCreationForm):
         model = User
         fields = ["username", "email", "first_name", "last_name", "password1", "password2"]
 
+
 class Category(models.Model):
     name = models.CharField(max_length=200, null=False, unique=True)
 
-    # def __str__(self):
-    #     return self.name
+    def __str__(self):
+        return self.name
 
 class Products(models.Model):
     name = models.CharField(max_length=200, null=False)
@@ -69,5 +70,6 @@ class ShippingAddress(models.Model):
 
     def __str__(self):
         return self.address
+        
 
 

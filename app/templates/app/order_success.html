@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %} {% load static %}
+{% block head-content %}
+  <title>Đặt hàng thành công</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+{% endblock head-content %}
+
+{% block main-content %}
+<div style="text-align: center; margin-top: 200px; margin-bottom: 100px;">
+    <h1 style="color: green; font-size: 24px;">Đặt hàng thành công!</h1>
+    <p style="color: #333; font-size: 16px;">Cảm ơn bạn đã mua sắm. Đơn hàng của bạn đã được xác nhận.</p>
+    <a href="/" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 20px;">Quay lại trang chủ</a>
+</div>  
+{% endblock main-content %}
